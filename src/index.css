@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas: #f8f9fa;
+    --workspace: #f1f3f5;
+    --surface: #ffffff;
+    --surface-secondary: #e9ecef;
+    --ink: #1a1a1a;
+    --text-secondary: #4a5568;
+    --muted: #8c98a4;
+    --border: #1a1a1a;
+    --border-strong: #000000;
+    --accent: #3b82f6;
+    --micro-accent: #2563eb;
+  }
+
+  html {
+    scroll-behavior: auto;
+    background-color: var(--canvas);
+    color: var(--ink);
+    font-family: 'Helvetica Neue', Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--ink);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+  }
+
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :focus-visible {
+    outline: 3px solid #72a5f8;
+    outline-offset: 3px;
+  }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+/* Custom Clean Minimalist 3D Depth Shadows & Elevations */
+.shadow-3d-card {
+  border: 3px solid #1a1a1a;
+  box-shadow: 4px 4px 0px #1a1a1a;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shadow-3d-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 7px 7px 0px #1a1a1a;
+}
+
+.shadow-3d-sidebar {
+  border-right: 3px solid #1a1a1a;
+  box-shadow: 5px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-3d-active {
+  border: 2px solid #1a1a1a;
+  box-shadow: 3px 3px 0px #1a1a1a;
+}
+
+.shadow-3d-button {
+  border: 2px solid #1a1a1a;
+  box-shadow: 3px 3px 0px #1a1a1a;
+  transition: all 0.18s ease;
+}
+
+.shadow-3d-button:focus-visible,
+.shadow-3d-card:focus-within {
+  box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+.shadow-3d-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+.shadow-3d-button:active {
+  transform: translateY(0);
+  box-shadow: 1px 1px 0px #1a1a1a;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a, button {
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+.inset-frame {
+  border: 2px solid #1a1a1a;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Subtle continuous 3D floating animation for the landing decorative symbol */
+@keyframes subtle-3d-float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.animate-subtle-3d {
+  animation: subtle-3d-float 6s ease-in-out infinite;
+}
+
+/* Scroll indicator animation */
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 2.5s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--canvas);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

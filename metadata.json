@@ -1,0 +1,8 @@
+{
+  "name": "Remix Shivanshu Tiwari - AI Engineer Portfolio",
+  "description": "Minimalist 3D AI Engineer Portfolio for Shivanshu Tiwari featuring GenAI, LLMs, Computer Vision, and DRDO research projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
