@@ -9,7 +9,7 @@
   <h1> Shivanshu Tiwari — AI & Machine Learning Engineer Portfolio</h1>
 
   <p>
-    <b>A 3-Stage Interactive Portfolio built with React 19, Vite 6, TypeScript, Motion & Lenis Smooth Scroll</b>
+    <b>A Interactive Portfolio built with React 19, Vite 6, TypeScript, Motion & Lenis Smooth Scroll</b>
   </p>
 
   <p align="center">
@@ -151,16 +151,8 @@ The application is structured into a state-driven single page application (SPA) 
 
 ---
 
-### 💻 Artificial Intelligence Intern — Codec Technologies India
-*April 2026 — May 2026 | Remote, India*
 
-- **Spam Email Classifier**: Implemented a Naive Bayes classifier with CountVectorizer for automated spam detection.
-- **AI Recommendation System**: Built content-based movie discovery using TF-IDF vectorization and cosine similarity.
-- **Rule-Based Chatbot**: Developed an interactive query handler using pattern matching in Python.
-
----
-
-## 🏆 Certifications & Qualifications
+##  Certifications & Qualifications
 
 - 📜 **Oracle Cloud Infrastructure 2025 Certified Generative AI Professional**
 - 📜 **Oracle Cloud Infrastructure 2025 Certified Data Science Professional**
@@ -170,115 +162,12 @@ The application is structured into a state-driven single page application (SPA) 
 
 ---
 
-## 📁 Repository Structure
 
-```
-remix-shivanshu-tiwari---ai-engineer-portfolio/
-├── 📁 public/                         # Static assets & generated PDFs
-│   ├── banner.png                     # Header profile banner image
-│   ├── profile.jpg                    # Developer profile photo
-│   └── Shivanshu_Tiwari-Resume.pdf    # Auto-generated PDF resume
-├── 📁 scripts/                        # Automation & build helper scripts
-│   └── generate_pdf.cjs               # jsPDF resume compilation script
-├── 📁 src/                            # Main application source code
-│   ├── 📁 assets/                     # Icons & graphic assets
-│   ├── 📁 components/                 # React UI components
-│   │   ├── 📁 closing/                # Stage 3: Contact & Closing component
-│   │   │   └── ThankYou.tsx
-│   │   ├── 📁 landing/                # Stage 1: Intro Landing component
-│   │   │   └── Landing.tsx
-│   │   ├── 📁 ui/                     # Reusable UI elements & scroll controllers
-│   │   │   ├── ProjectCard.tsx        # Interactive project grid card
-│   │   │   ├── ProjectScreenshotMock.tsx # Dynamic project screenshot modal
-│   │   │   └── SmoothScroll.tsx       # Lenis smooth scroll setup
-│   │   └── 📁 workspace/              # Stage 2: Core Workspace components
-│   │       ├── AboutSection.tsx       # Bio & education listing
-│   │       ├── CapabilitiesSection.tsx # Core capabilities & skills matrix
-│   │       ├── EndWorkspace.tsx       # Workspace footer transition prompt
-│   │       ├── ExperienceSection.tsx   # DRDO & Codec Tech timeline
-│   │       ├── Hero.tsx               # Main hero section & live status card
-│   │       ├── HowIBuildSection.tsx   # 5-step engineering methodology
-│   │       ├── MobileHeader.tsx       # Responsive mobile navigation header
-│   │       ├── ProjectGrid.tsx        # Project showcase grid wrapper
-│   │       ├── Sidebar.tsx            # Desktop interactive navigation sidebar
-│   │       └── Workspace.tsx          # Workspace main view orchestrator
-│   ├── 📁 data/                       # Portfolio content & data records
-│   │   ├── experience.ts              # Internship & work history data
-│   │   ├── profile.ts                 # Bio, social links & contact info
-│   │   ├── projects.ts                # Deep technical details for all projects
-│   │   └── skills.ts                  # Capabilities, tech stack & certifications
-│   ├── App.tsx                        # Root stage manager & transition engine
-│   ├── index.css                      # Tailwind v4 directives & theme styles
-│   ├── main.tsx                       # React 19 application entry point
-│   ├── motion.ts                      # Framer Motion spring & easing config
-│   └── types.ts                       # TypeScript interfaces & types
-├── .env.example                       # Environment template
-├── index.html                         # HTML template & fonts import
-├── metadata.json                      # Portfolio app metadata
-├── package.json                       # Project dependencies & scripts
-├── tsconfig.json                      # TypeScript configuration
-└── vite.config.ts                     # Vite 6 configuration
-```
-
----
-
-## ⚡ Getting Started & Local Setup
-
-### Prerequisites
-- **Node.js**: `v20.0.0` or higher
-- **npm**: `v10.0.0` or higher
-
-### Installation & Run
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Shivanshu85/My_Portfolio.git
-   cd My_Portfolio
-   ```
-
-2. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start Development Server**:
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:3000` in your web browser. No external `.env` file or API key is required to run the client.
-
----
-
-## 📜 NPM Scripts Reference
-
-| Script | Command | Description |
-| :--- | :--- | :--- |
-| `npm run dev` | `vite --port=3000 --host=0.0.0.0` | Starts the Vite development server on port 3000 |
-| `npm run build` | `vite build` | Compiles the production-ready bundle into `dist/` |
-| `npm run preview` | `vite preview` | Previews the compiled production build locally |
-| `npm run lint` | `tsc --noEmit` | Runs strict TypeScript type-checking across the codebase |
-| `npm run clean` | `node -e "require('fs').rmSync('dist', ...)"` | Removes the build artifact directory `dist/` |
-| `npm run generate:resume` | `node scripts/generate_pdf.cjs` | Programmatically generates `Shivanshu_Tiwari_Resume.pdf` in `public/` using `jsPDF` |
-
----
-
-## 📄 Automated Resume Generation Engine
-
-This project includes a custom resume generator script (`scripts/generate_pdf.cjs`). It programmatically formats and compiles Shivanshu Tiwari's latest professional experience, DRDO research accomplishments, project metrics, education, and certifications into a standardized PDF format.
-
-To trigger resume regeneration:
-```bash
-npm run generate:resume
-```
-Output location: `public/Shivanshu_Tiwari_Resume.pdf`
-
----
-
-## 📬 Contact & Connect
+##  Contact & Connect
 
 **Shivanshu Tiwari**  
 *ML Intern @ DRDO \| GenAI & LLM Engineer \| Data Engineer*  
-📍 Deoria / Lucknow, Uttar Pradesh, India  
+ Deoria / Lucknow, Uttar Pradesh, India  
 
 - **Email**: [tshivanshu48@gmail.com](mailto:tshivanshu48@gmail.com)
 - **GitHub**: [github.com/Shivanshu85](https://github.com/Shivanshu85)
@@ -290,4 +179,3 @@ Output location: `public/Shivanshu_Tiwari_Resume.pdf`
 <div align="center">
   <sub>Built with ❤️ by Shivanshu Tiwari using React 19, Vite 6, TypeScript & Tailwind CSS.</sub>
 </div>
-
